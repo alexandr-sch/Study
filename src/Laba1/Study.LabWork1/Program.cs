@@ -1,4 +1,5 @@
 using Study.LabWork1.Shared.Services;
+using Study.LabWork1.Features.Task3;
 
 namespace Study.LabWork1;
 
@@ -50,6 +51,19 @@ public static class Program
                         break;
                     case 3:
                         Console.WriteLine("Задание 3\n");
+
+                        var root = new TreeNode("A");
+                        var b = new TreeNode("B");
+                        var c = new TreeNode("C");
+                        var d = new TreeNode("D");
+                        var e = new TreeNode("E");
+
+                        root.AddChild(b);
+                        root.AddChild(c);
+                        b.AddChild(d);
+                        b.AddChild(e);
+
+                        service.SetTree(root);
                         service.RunTask3();
                         break;
                 }

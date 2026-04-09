@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Task3\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Study.LabWork1\Study.LabWork1.csproj" />
   </ItemGroup>
 
