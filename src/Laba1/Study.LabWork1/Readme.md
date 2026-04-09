@@ -7,9 +7,6 @@
   - [RunTask1()](#M-Study-LabWork1-Shared-Abstractions-IRunService-RunTask1 'Study.LabWork1.Shared.Abstractions.IRunService.RunTask1')
   - [RunTask2()](#M-Study-LabWork1-Shared-Abstractions-IRunService-RunTask2 'Study.LabWork1.Shared.Abstractions.IRunService.RunTask2')
   - [RunTask3()](#M-Study-LabWork1-Shared-Abstractions-IRunService-RunTask3 'Study.LabWork1.Shared.Abstractions.IRunService.RunTask3')
-- [Program](#T-Study-LabWork1-Program 'Study.LabWork1.Program')
-  - [RUN_TASK_NUMBER](#F-Study-LabWork1-Program-RUN_TASK_NUMBER 'Study.LabWork1.Program.RUN_TASK_NUMBER')
-  - [Main()](#M-Study-LabWork1-Program-Main 'Study.LabWork1.Program.Main')
 - [RunService](#T-Study-LabWork1-Shared-Services-RunService 'Study.LabWork1.Shared.Services.RunService')
   - [RunTask1()](#M-Study-LabWork1-Shared-Services-RunService-RunTask1 'Study.LabWork1.Shared.Services.RunService.RunTask1')
   - [RunTask2()](#M-Study-LabWork1-Shared-Services-RunService-RunTask2 'Study.LabWork1.Shared.Services.RunService.RunTask2')
@@ -54,35 +51,6 @@ This method has no parameters.
 ##### Summary
 
 Запуск выполнения задания 3
-
-##### Parameters
-
-This method has no parameters.
-
-<a name='T-Study-LabWork1-Program'></a>
-## Program `type`
-
-##### Namespace
-
-Study.LabWork1
-
-##### Summary
-
-Начальная точка входа
-
-<a name='F-Study-LabWork1-Program-RUN_TASK_NUMBER'></a>
-### RUN_TASK_NUMBER `constants`
-
-##### Summary
-
-Номер выполняемой задачи
-
-<a name='M-Study-LabWork1-Program-Main'></a>
-### Main() `method`
-
-##### Summary
-
-Старт программы
 
 ##### Parameters
 
