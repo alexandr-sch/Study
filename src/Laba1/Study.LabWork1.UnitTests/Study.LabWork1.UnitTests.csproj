@@ -15,13 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Task1\" />
-    <Folder Include="Features\Task2\" />
-    <Folder Include="Features\Task3\" />
+    <ProjectReference Include="..\Study.LabWork1\Study.LabWork1.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Study.LabWork1\Study.LabWork1.csproj" />
+    <Folder Include="Features\Task1\" />
+    <Folder Include="Features\Task2\" />
   </ItemGroup>
 
 </Project>
