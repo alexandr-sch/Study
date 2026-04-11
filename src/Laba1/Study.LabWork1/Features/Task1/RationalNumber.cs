@@ -7,9 +7,7 @@ namespace Study.LabWork1.Features.Task1
     public class RationalNumber
     {
         public int Numerator { get; }
-
         public int Denominator { get; }
-
         public RationalNumber(int numerator, int denominator)
         {
             if (denominator == 0)
