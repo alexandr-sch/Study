@@ -19,7 +19,6 @@ public class RunService : IRunService
     public void RunTask2()
     {
         Console.WriteLine("Задание 2\n");
-
         while (true)
         {
             Console.WriteLine("\nВыберите тип логгера:");
