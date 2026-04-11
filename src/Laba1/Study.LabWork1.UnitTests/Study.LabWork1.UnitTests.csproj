@@ -18,4 +18,9 @@
     <ProjectReference Include="..\Study.LabWork1\Study.LabWork1.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Task1\" />
+    <Folder Include="Features\Task2\" />
+  </ItemGroup>
+
 </Project>

@@ -4,6 +4,11 @@
     <OutputType>Exe</OutputType>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Task1\" />
+    <Folder Include="Features\Task2\" />
+  </ItemGroup>
+
   <Import Project="..\..\build.settings.props" />
   <Import Project="..\..\readme-generation.props" />
 
