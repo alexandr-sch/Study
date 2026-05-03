@@ -2,38 +2,69 @@ using Study.LabWork1.Shared.Services;
 
 namespace Study.LabWork1;
 
-/// <summary>
-/// Начальная точка входа
-/// </summary>
 public static class Program
 {
-    /// <summary>
-    /// Номер выполняемой задачи
-    /// </summary>
-    private const int RUN_TASK_NUMBER = 1;
-
-    /// <summary>
-    /// Старт программы
-    /// </summary>
     public static void Main()
     {
         var service = new RunService();
 
-        // todo: можно переписать на ввод с консоли
-
-        switch (RUN_TASK_NUMBER)
+        while (true)
         {
-            case 1:
-                service.RunTask1();
+            Console.Clear();
+            Console.WriteLine("\nДоступные задания:");
+            Console.WriteLine("1 - Задание 1");
+            Console.WriteLine("2 - Задание 2");
+            Console.WriteLine("3 - Задание 3");
+            Console.WriteLine("0 - Выход");
+
+            Console.Write("\nВыберите номер задания: ");
+            string input = Console.ReadLine();
+
+            if (input == "0")
+            {
+                Console.WriteLine("\nПрограмма завершена");
                 break;
-            case 2:
-                service.RunTask2();
-                break;
-            case 3:
-                service.RunTask3();
-                break;
-            default:
-                throw new NotSupportedException();
+            }
+
+            if (!int.TryParse(input, out int taskNumber) || taskNumber < 1 || taskNumber > 3)
+            {
+                Console.WriteLine("\nОшибка: Введите число от 1 до 3");
+                Console.WriteLine("Нажмите любую клавишу для продолжения");
+                Console.ReadKey();
+                continue;
+            }
+
+            Console.Clear();
+
+            try
+            {
+                switch (taskNumber)
+                {
+                    case 1:
+                        Console.WriteLine("Задание 1\n");
+                        service.RunTask1();
+                        break;
+                    case 2:
+                        Console.WriteLine("Задание 2\n");
+                        service.RunTask2();
+                        break;
+                    case 3:
+                        Console.WriteLine("Задание 3\n");
+                        service.RunTask3();
+                        break;
+                }
+            }
+            catch (NotImplementedException)
+            {
+                Console.WriteLine($"\nЗадание {taskNumber} ещё не реализовано!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"\nОшибка при выполнении задания: {ex.Message}");
+            }
+
+            Console.WriteLine("\nНажмите любую клавишу для возврата в меню...");
+            Console.ReadKey();
         }
     }
 }
