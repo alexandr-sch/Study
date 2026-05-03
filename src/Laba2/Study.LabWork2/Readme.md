@@ -8,6 +8,7 @@
 - [MonitorService](#T-Study-LabWork2-Feature-Task1-SubTask1-MonitorService 'Study.LabWork2.Feature.Task1.SubTask1.MonitorService')
 - [MutexService](#T-Study-LabWork2-Feature-Task1-SubTask1-MutexService 'Study.LabWork2.Feature.Task1.SubTask1.MutexService')
 - [NumberSetProcessor](#T-Study-LabWork2-Feature-Task1-SubTask2-NumberSetProcessor 'Study.LabWork2.Feature.Task1.SubTask2.NumberSetProcessor')
+- [PrimeChecker](#T-Study-LabWork2-Feature-Task1-SubTask1-PrimeChecker 'Study.LabWork2.Feature.Task1.SubTask1.PrimeChecker')
 - [SemaphoreService](#T-Study-LabWork2-Feature-Task1-SubTask1-SemaphoreService 'Study.LabWork2.Feature.Task1.SubTask1.SemaphoreService')
 - [SynchronousServerRequestApp](#T-Study-LabWork2-Feature-Task2-SynchronousServerRequestApp 'Study.LabWork2.Feature.Task2.SynchronousServerRequestApp')
 
@@ -42,7 +43,7 @@ Study.LabWork2.Feature.Task1.SubTask1
 
 ##### Summary
 
-Версия 1. Использует Monitor (lock) для синхронизации
+Версия 1. Monitor
 
 <a name='T-Study-LabWork2-Feature-Task1-SubTask1-MutexService'></a>
 ## MutexService `type`
@@ -53,7 +54,7 @@ Study.LabWork2.Feature.Task1.SubTask1
 
 ##### Summary
 
-Версия 2. Использует Mutex для синхронизации
+Версия 2. Mutex
 
 <a name='T-Study-LabWork2-Feature-Task1-SubTask2-NumberSetProcessor'></a>
 ## NumberSetProcessor `type`
@@ -66,6 +67,17 @@ Study.LabWork2.Feature.Task1.SubTask2
 
 Определяет реализацию для процессора наборов чисел
 
+<a name='T-Study-LabWork2-Feature-Task1-SubTask1-PrimeChecker'></a>
+## PrimeChecker `type`
+
+##### Namespace
+
+Study.LabWork2.Feature.Task1.SubTask1
+
+##### Summary
+
+Вспомогательный класс с общими методами для всех версий счетчиков
+
 <a name='T-Study-LabWork2-Feature-Task1-SubTask1-SemaphoreService'></a>
 ## SemaphoreService `type`
 
@@ -75,7 +87,7 @@ Study.LabWork2.Feature.Task1.SubTask1
 
 ##### Summary
 
-Версия 3. Использует Semaphore для синхронизации
+Версия 3. Semaphore
 
 <a name='T-Study-LabWork2-Feature-Task2-SynchronousServerRequestApp'></a>
 ## SynchronousServerRequestApp `type`
